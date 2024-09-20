@@ -16,12 +16,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header id="home" class="header">
+    <header  class="header">
+      
       <div class="container">
         <div class="nav-bar">
           <div class="logo">
             <div class="logo__symbol">
-              <img src="../images/home/logo.png" alt="1" />
+              <img src="../images/home/logo.png" alt="logo" />
             </div>
             <!-- /.logo__symbol -->
             <div class="logo__name">
@@ -30,26 +31,52 @@
             <!-- /.logo__name -->
           </div>
           <!-- /.logo -->
-          <ul class="nav-bar__list">
-            <li class="nav-bar__list__item">
-              <a class="link" href="../index.html#home">Home</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-            <li class="nav-bar__list__item">
-              <a class="link" href="../index.html#About">About me</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-            
-            <li class="nav-bar__list__item">
-              <a class="link" href="../index.html#contact">Contact</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-          </ul>
-          <!-- /.nav-bar__list -->
+  
+          <nav class="nav">
+            <ul class="list nav-bar__list">
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="../index.html">Home</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="../index.html">About me</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="../index.html">Portfolio</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="../index.html">Contact</a>
+              </li>
+              <!-- /.list__item -->
+            </ul>
+            <!-- /.list -->
+          </nav>
+          <!-- /.nav -->
         </div>
         <!-- /.nav-bar -->
+       
       </div>
       <!-- /.container -->
+
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="burger-menu">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">About me</a></li>
+            <li><a  href="../index.html">Portfolio</a></li>
+            <li><a class="link" href="../index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.burger -->
     </header>
     <!-- /.header -->
     <section  class="section home">

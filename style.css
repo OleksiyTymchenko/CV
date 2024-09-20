@@ -452,7 +452,8 @@ body {
 
 
 .about {
-  height: 465vh;
+  height: 350vh;
+  padding: 0;
 }
 
 .footer__contant {
@@ -464,6 +465,9 @@ body {
 
 .footer_list{
   margin-bottom: 30px;
+}
+h1{
+  font-size: 30px;
 }
 
 }
