@@ -16,12 +16,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header id="home" class="header">
+    <header  class="header">
+      
       <div class="container">
         <div class="nav-bar">
           <div class="logo">
             <div class="logo__symbol">
-              <img src="./images/home/logo.png" alt="1" />
+              <img src="./images/home/logo.png" alt="logo" />
             </div>
             <!-- /.logo__symbol -->
             <div class="logo__name">
@@ -30,32 +31,55 @@
             <!-- /.logo__name -->
           </div>
           <!-- /.logo -->
-          <ul class="nav-bar__list">
-            <li class="nav-bar__list__item">
-              <a class="link" href="#home">Home</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-            <li class="nav-bar__list__item">
-              <a class="link" href="#About">About me</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-            <li class="nav-bar__list__item">
-              <a class="link" href="./portfolio/portfolio.html">Portfolio</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-            <li class="nav-bar__list__item">
-              <a class="link" href="#contact">Contact</a>
-            </li>
-            <!-- /.nav-bar__list__item -->
-          </ul>
-          <!-- /.nav-bar__list -->
+  
+          <nav class="nav">
+            <ul class="list nav-bar__list">
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="#home">Home</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="#about">About me</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="./portfolio/portfolio.html">Portfolio</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item nav-bar__list__item">
+                <a class="link" href="#contact">Contact</a>
+              </li>
+              <!-- /.list__item -->
+            </ul>
+            <!-- /.list -->
+          </nav>
+          <!-- /.nav -->
         </div>
         <!-- /.nav-bar -->
+       
       </div>
       <!-- /.container -->
+
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="burger-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a  href="./portfolio/portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.burger -->
     </header>
     <!-- /.header -->
-    <section  class="section home">
+    <section id="home"  class="section home ">
       <div class="container">
         <div class="home__contant">
           <div class="home__contant__text">
@@ -83,7 +107,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section -->
-    <section class="section about">
+    <section id="about" class="section about ">
       <div class="container">
         <div id="About" class="about__contant">
           <div class="speciality">
@@ -199,7 +223,7 @@
                 <img
                   src="./images/about_me/my_photos/photo_3.png"
                   alt="1"
-                  class="photo my_first_photo"
+                  class="photo my_first_photo last-photo"
                 />
               </div>
               <!-- /.about_me__information__item -->
@@ -213,16 +237,16 @@
       <!-- /.container -->
     </section>
     <!-- /.section -->
-    <footer class="footer" id="contact">
+    <footer class="footer " id="contact">
       <div class="container">
         <div class="footer__contant">
           <ul class="nav-bar__list footer_list">
             <li class="nav-bar__list__item">
-              <a class="link" href="#">Home</a>
+              <a class="link" href="#home">Home</a>
             </li>
             <!-- /.nav-bar__list__item -->
             <li class="nav-bar__list__item">
-              <a class="link" href="#">About me</a>
+              <a class="link" href="#about">About me</a>
             </li>
             <!-- /.nav-bar__list__item -->
             <li class="nav-bar__list__item">
